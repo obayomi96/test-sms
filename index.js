@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 
 const users = [];
 
-app.post('/users', (req, res) => {
+app.post('/send', (req, res) => {
   const { name, phonenumber } = req.body;
   const newUser = {
     name,
